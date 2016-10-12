@@ -3,7 +3,7 @@
 <div class="container">
 	<nav>
 		<ul>
-			<li><a href="/variables/p02" target="vdemo">Plain PHP</a></li>
+			<li><a href="/variables/p01" target="vdemo">Plain PHP</a></li>
 			<li><a href="/variables/p02" target="vdemo">PHP variable in view</a></li>
 			<li><a href="/variables/p03" target="vdemo">PHP variable in controller</a></li>
 			<li><a href="/variables/p04" target="vdemo">Use alternate syntax</a></li>

@@ -3,15 +3,15 @@
 <div class="container">
 	<nav>
 		<ul>
-			<li><a href="#" target="vdemo">CI Template Parser</a></li>
-			<li><a href="#" target="vdemo">Blade</a></li>
-			<li><a href="#" target="vdemo">Dwoo</a></li>
-			<li><a href="#" target="vdemo">Smarty</a></li>
-			<li><a href="#" target="vdemo">Twig</a></li>
+			<li><a href="#">CI Template Parser</a></li>
+			<li><a href="#">Blade</a></li>
+			<li><a href="#">Dwoo</a></li>
+			<li><a href="#">Smarty</a></li>
+			<li><a href="#">Twig</a></li>
 		</ul>
 		<a href="/">Home</a>
 	</nav>
 	<article>
-		<iframe src="/demo.html" name="vdemo"></iframe>
+		<iframe src="/toomuch.html" name="vdemo"></iframe>
 	</article>
 </div>
