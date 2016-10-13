@@ -17,38 +17,13 @@ class Assembly extends Application {
 		$this->render();
 	}
 
-	// Plain HTML - hard-coded :(
+	// Panels - 4 column layout from cssplay
 	function p01()
 	{
-		$this->load->view("cons/p01");
-	}
-
-	// Traditional data-driven construction
-	function p02()
-	{
-		$contacts = $this->contacts->all();
-		$parms = array('contacts' => (object) $contacts);
-		$this->load->view("cons/p02", $parms);
-	}
-
-	// Use template parser instead
-	function p03()
-	{
-		$rows = array();
-		foreach ($this->contacts->objects() as $record)
-			$rows[] = (array) $record; // parser works with arrays
-		$parms = array('records' => $rows); // array of arrays
-		$this->parser->parse("cons/p03", $parms);
-	}
-
-	// View fragments, using template parser
-	function p04()
-	{
-		$result = '';
-		foreach ($this->contacts->objects() as $record)
-			$result .= $this->parser->parse('cons/p04row', (array) $record, true);
-		$parms = array('inside_stuff' => $result);
-		$this->parser->parse("cons/p04", $parms);
+		$this->load->library('parsedown');
+		$text = file_get_contents('../data/lorem1.md');
+		$this->data['cols'] = $this->parsedown->parse($text);
+		$this->parser->parse('bob/p01', $this->data);		
 	}
 
 }
