@@ -1,1 +1,0 @@
-<p>Hi there, my name is <?= $name ?> and I want to visit <?= $target ?>!</p>
